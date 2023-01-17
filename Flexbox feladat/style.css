@@ -3,25 +3,69 @@
     margin: 0;
 }
 
-
-
-h1{
-    
-    
-    color: #41ff01f6;
-    text-align: center;
-}
-
-
-
-
-.kepek{
-    height: 200;
+.flex-container{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+
+    height: 100vh;
+    background: rgb(255,159,40);
+    background: linear-gradient(0deg, rgba(255,159,40,1) 0%, rgba(200,236,244,1) 100%);
+
+}
+
+img{
+    height: 300px;
+
 }
 
 
+.labda{
+
+    height: 50px;
+    position: absolute;
+    left: 160px;
+    display: flex;
+    
+}
+
+.kapu{
+    display: flex;
+
+}
+
+.kapu img{
+
+    height: 400px;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(197, 118, 0);
+    font-weight: 500;
+    transition: background-color 300ms ease-in, color 500ms ease-in-out;
+    text-align: center;
+
+}
+
+h1:hover{
+    background-color: rgb(207, 169, 0);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes labda { 
+    0% {transform: translateX(1px) rotate(1deg);}
+  100% {transform: translateX(1160px) rotate(1500deg);}
+}
+
+
+.labda{
+          animation-name: labda;
+  -webkit-animation-name: labda;
+          animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+    animation-fill-mode: both;
+}
